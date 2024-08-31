@@ -1,0 +1,188 @@
+<div class="faq_main_section">
+  <div class="width_container">
+    <div class="faq_main_heading">{{section.settings.headingtext}}</div>
+    <div class="collapsible-tabs__wrapper">
+        {%- for block in section.blocks -%}
+            {% if block.settings.question != blank %}
+      <div class="collapsibles-wrapper">
+        <button type="button" class="collapsible-trigger-btn">{{block.settings.question}}</button>
+        <div class="collapsible-content">
+          <div class="collapsible-content__inner">
+            <div class="paragraph">
+                {{block.settings.answer}}
+            </div>
+          </div>
+        </div>
+      </div>
+  {% endif %}
+    {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Faq section",
+  "tag": "section",
+  "class": "faq_section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "headingtext",
+      "label": "Section heading"
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "backgroundcolor"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "block",
+      "type": "text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question text"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Faq section",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+  .width_container {
+    max-width: 1600px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .faq_main_section {
+    padding: 80px 0;
+    background-color: {{section.settings.background}};
+  }
+  .faq_main_heading {
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 72px;
+    text-align: center;
+    color: #3f3631;
+    margin-bottom: 50px;
+  }
+  .collapsible-tabs__wrapper{
+    width: 60%;
+    margin: 0 auto;
+  }
+  .faq_section .collapsibles-wrapper:last-child {
+    border-bottom: 2px solid #3f3631;
+  }
+
+  .faq_section .collapsibles-wrapper .collapsible-trigger-btn {
+    background: none;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    padding: 16px 0;
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 33px;
+    color: #3f3631;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #3f3631;
+    position: relative;
+  }
+
+  .faq_section .collapsibles-wrapper .collapsible-trigger-btn::after {
+    content: '+';
+    font-size: 30px;
+    font-weight: 400;
+    position: absolute;
+    right: 0;
+  }
+
+  .faq_section .collapsibles-wrapper.collapsible-tab__open .collapsible-trigger-btn::after {
+    content: '-';
+    font-size: 40px;
+  }
+
+  .faq_section .collapsibles-wrapper .collapsible-content {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s linear;
+  }
+
+  .faq_section .collapsibles-wrapper.collapsible-tab__open .collapsible-content {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .faq_section .collapsibles-wrapper .collapsible-content__inner {
+    padding-bottom: 20px;
+  }
+
+  .faq_section .collapsibles-wrapper .collapsible-content__inner .paragraph {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    text-align: left;
+    margin: 0;
+  }
+  .faq_section .collapsibles-wrapper .collapsible-content__inner .paragraph p{
+   margin: 0;
+  }
+  @media (max-width:768px) {
+    .collapsible-tabs__wrapper {
+    width: 75%;
+}
+  }
+  @media (max-width:576px) {
+    .collapsible-tabs__wrapper {
+    width: 100%;
+}
+.faq_main_heading{
+font-size: 36px;
+line-height: 46px;
+}
+.faq_section .collapsibles-wrapper .collapsible-trigger-btn{
+font-size: 22px;
+line-height: 33px;
+}
+
+  }
+</style>
+
+<script>
+  const collapsibleButtons = document.querySelectorAll('.collapsible-trigger-btn');
+
+  collapsibleButtons.forEach((collapsibleButton) => {
+    const collapsibleContentDataHeight = collapsibleButton.nextElementSibling.offsetHeight;
+    collapsibleButton.nextElementSibling.style.height = 0;
+    collapsibleButton.addEventListener('click', (e) => {
+      if (!e.currentTarget.parentElement.classList.contains('collapsible-tab__open')) {
+        e.currentTarget.parentElement.classList.toggle('collapsible-tab__open');
+        e.currentTarget.nextElementSibling.style.height = `${collapsibleContentDataHeight}px`;
+      } else {
+        e.currentTarget.parentElement.classList.remove('collapsible-tab__open');
+        e.currentTarget.nextElementSibling.style.height = 0;
+      }
+    });
+  });
+</script>
