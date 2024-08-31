@@ -106,6 +106,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -120,6 +121,14 @@
         "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 28
+      }
+    },
+    "custom_img_text_kzTLYx": {
+      "type": "custom-img-text",
+      "settings": {
+        "money_back_image": "shopify:\/\/shop_images\/image_164.png",
+        "money_back_heading": "30 Day Money Back Guarantee",
+        "money_back_text": "At Firebee we believe in building quality products that actually work. Firebee and its partners have invested over $85 million in research and development to create the highest quality wearable for customers to enjoy. If for any reason if you are not satisfied with your Firebee headband we will happily refund your purchase."
       }
     },
     "firebee_imag_text_6exede": {
@@ -229,6 +238,7 @@
   "order": [
     "main",
     "related-products",
+    "custom_img_text_kzTLYx",
     "firebee_imag_text_6exede",
     "faq_section_bF6Ka4"
   ]
