@@ -106,10 +106,63 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "firebee_imag_text_6exede": {
+      "type": "firebee-imag-text",
+      "blocks": {
+        "text_TrB3BN": {
+          "type": "text",
+          "settings": {
+            "arrowimg": "shopify:\/\/shop_images\/Subtract.svg",
+            "linetext": "<p>Can’t sleep? Turn on the <span class=\"deep_color\">deep sleep<\/span> signal <\/p>"
+          }
+        },
+        "text_KERhM9": {
+          "type": "text",
+          "settings": {
+            "arrowimg": "shopify:\/\/shop_images\/Subtract_1.svg",
+            "linetext": "<p>Feeling tired? Turn on the  <span class=\"alert_color\">alert <\/span> signal<\/p>"
+          }
+        },
+        "text_b8DiC3": {
+          "type": "text",
+          "settings": {
+            "arrowimg": "shopify:\/\/shop_images\/Subtract_1.svg",
+            "linetext": "<p>Feeling anxious? Turn on the <span class=\"calm_color\">calm <\/span>signal <\/p>"
+          }
+        },
+        "text_ibwcFz": {
+          "type": "text",
+          "settings": {
+            "arrowimg": "shopify:\/\/shop_images\/Subtract_1.svg",
+            "linetext": "<p>Feeling unproductive? Turn on the <span class=\"focus_color\">focus <\/span>signal<\/p>"
+          }
+        },
+        "text_TEh4CT": {
+          "type": "text",
+          "settings": {
+            "arrowimg": "shopify:\/\/shop_images\/Subtract_1.svg",
+            "linetext": "<p>Feeling blue? Turn on the \n<span class=\"happy_color\">happy <\/span> signal<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_TrB3BN",
+        "text_KERhM9",
+        "text_b8DiC3",
+        "text_ibwcFz",
+        "text_TEh4CT"
+      ],
+      "settings": {
+        "headingtext": "What will Firebee do for me?",
+        "subheadingtext": "Firebee will help you gently nudge yourself into a different mental state",
+        "mainimg": "shopify:\/\/shop_images\/ec2d03fca4e4e64d116b50573614e90d.png"
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "firebee_imag_text_6exede"
   ]
 }
