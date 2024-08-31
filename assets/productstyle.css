@@ -227,7 +227,7 @@ header-drawer {
     }
 
     .hidemobile {
-        display: none;
+        display: none !important;
     }
 
     .hidedesktop {
