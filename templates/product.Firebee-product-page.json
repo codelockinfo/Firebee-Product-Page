@@ -114,35 +114,35 @@
           "type": "text",
           "settings": {
             "arrowimg": "shopify:\/\/shop_images\/Subtract.svg",
-            "linetext": ""
+            "linetext": "<p>Can’t sleep? Turn on the deep sleep signal <\/p>"
           }
         },
         "text_KERhM9": {
           "type": "text",
           "settings": {
             "arrowimg": "shopify:\/\/shop_images\/Subtract_1.svg",
-            "linetext": ""
+            "linetext": "<p>Feeling tired? Turn on the alert signal  <\/p>"
           }
         },
         "text_b8DiC3": {
           "type": "text",
           "settings": {
             "arrowimg": "shopify:\/\/shop_images\/Subtract_1.svg",
-            "linetext": ""
+            "linetext": "<p>Feeling anxious? Turn on the calm signal <\/p>"
           }
         },
         "text_ibwcFz": {
           "type": "text",
           "settings": {
             "arrowimg": "shopify:\/\/shop_images\/Subtract_1.svg",
-            "linetext": ""
+            "linetext": "<p>Feeling unproductive? Turn on the focus signal <\/p>"
           }
         },
         "text_TEh4CT": {
           "type": "text",
           "settings": {
             "arrowimg": "shopify:\/\/shop_images\/Subtract_1.svg",
-            "linetext": ""
+            "linetext": "<p>Feeling blue? Turn on the \n<span class=\"happy_color\">happy <\/span> signal<\/p>"
           }
         }
       },
