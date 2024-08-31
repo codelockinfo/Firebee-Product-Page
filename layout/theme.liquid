@@ -375,3 +375,50 @@
     {%- endif -%}
   </body>
 </html>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var buyNowButton = document.querySelector('.headerBuyNow');
+
+  if (buyNowButton) {
+    buyNowButton.addEventListener('click', function(e) {
+      console.log("GGGGGGGGGG");
+      e.preventDefault();
+
+      // Get the selected variant ID
+      var variantId;
+      var selectElement = document.querySelector('select[name=id]');
+      var radioElement = document.querySelector('input[name="id"]');
+console.log(selectElement);
+console.log(radioElement);
+      if (selectElement) {
+        variantId = selectElement.value;
+      } else if (radioElement) {
+        variantId = radioElement.value;
+      }
+
+      if (!variantId) {
+        alert('Please select a variant before proceeding.');
+        return;
+      }
+
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', '/cart/add.js', true);
+      xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4) {
+          if (xhr.status === 200) {
+            window.location.href = '/checkout';
+          } else {
+            console.error('Error adding item to cart:', xhr.responseText);
+          }
+        }
+      };
+
+      var params = 'id=' + encodeURIComponent(variantId) + '&quantity=1';
+      xhr.send(params);
+    });
+  }
+});
+
+</script>
