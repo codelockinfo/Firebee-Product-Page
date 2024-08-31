@@ -91,30 +91,30 @@
       {% endif %}
       {{ input_dataset }}
     >
-    <label for="{{ input_id }}">
+    <label for="{{ input_id }}" class="star_kit_box">
         {%- assign selected_variant = product.variants | where: 'option1', value | first -%}
 
-        <div>
-            <div>{{ value -}}</div>
-            <div><span>{{ selected_variant.compare_at_price | money }}</span>{{ selected_variant.price | money }}</div>
+        <div class="star_kit_price_box">
+            <div class="star_kit_h">{{ value -}}</div>
+            <div class="star_kit_price"><span class="star_kit_comprice">{{ selected_variant.compare_at_price | money }}</span>{{ selected_variant.price | money }}</div>
         </div>
         
         {{ label_unavailable }}
-      <div>
+      <div class="most_kit_content">
         {% for variant in product.variants %}
             {% if value == variant.title %} 
                 {% if value == "Firebee Starter Kit" %}
-                    <div>MOST POPULAR KIT</div>
+                    <div class="most_kit">MOST POPULAR KIT</div>
                 {% endif %}
                 {% assign rightcontent = variant.metafields.custom.rightcontent  | remove: '["' | remove: '"]' %}
                 {%  if rightcontent != blank %}
                       {% assign paragraphs = rightcontent | split:  '","' %}
                       {% for paragraph in paragraphs %}
-                        <div class="flex gap-8">
+                        <div class="flex gap-8 star_kit_li">
                             <span class="svg-wrapper">
                                 {{- 'icon-right.svg' | inline_asset_content  -}}
                             </span>
-                            <div class=""> 
+                            <div class="star_kit_li_p"> 
                                 {{ paragraph }}
                             </div>
                         </div>
@@ -123,7 +123,7 @@
             {% endif %}
         {% endfor %}
       </div>
-      <div class="">
+      <div class="main_p">
             {% for variant in product.variants %}
                 {% if value ==   variant.title %} 
                     {{ variant.metafields.custom.content.value }}

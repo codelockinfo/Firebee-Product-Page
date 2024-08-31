@@ -105,7 +105,87 @@ header-drawer {
     text-transform: none !important;
 }
 
+.star_kit_box{
+    background-color: #fff !important;
+    border-radius: 10px !important;
+    border: 1px solid #C4C4C4;
+}
+.product-form__input--pill input[type=radio]:checked+label {
+-webkit-border-radius: 10px !important;
+border-radius: 10px !important; 
+color: #3F3631 !important;
+  border: 2px solid;
+border-width: 2px;
+border-image-slice: 1;
+border-image-source: linear-gradient(180deg, #2D5ECE 0%, #9F4EA1 100%);
+}
+.star_kit_price_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.star_kit_price_box .star_kit_h{
+    font-family: Poppins;
+font-size: 24px;
+font-weight: 700;
+line-height: 36px;
+text-align: left;
+color: #3F3631;
+}
+.star_kit_price_box .star_kit_price{
+    font-family: Poppins;
+font-size: 24px;
+font-weight: 300;
+line-height: 36px;
+text-align: left;
+color: #3F3631;
+}
+.star_kit_price_box .star_kit_comprice{
+    font-family: Poppins;
+font-size: 24px;
+font-weight: 300;
+line-height: 36px;
+text-align: left;
+color: #3F3631;
+text-decoration: line-through;
+text-decoration-color: red;
+margin-right: 10px;
 
+}
+.most_kit{
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #A34D9F 0%, #275FD0 100%);
+    display: inline-block;
+    color: #fff;
+    border-radius: 100px;
+}
+.star_kit_li{
+    margin-bottom: 5px;
+    align-items: self-start;
+}
+.star_kit_li_p{
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23px;
+    text-align: left;    
+}
+.most_kit_content{
+    margin: 15px 0;
+}
+.star_kit_box .svg-wrapper>svg{
+    height: auto !important;
+    width: auto !important;
+}
+.main_p{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: left;
+    margin-top: 10px;
+}
 @media screen and (max-width: 991px) {
     .trustbadge_box .details_box {
         display: block;
@@ -131,8 +211,11 @@ header-drawer {
         flex-wrap: wrap;
     }
 }
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 576px) {
     .header-buynow{
         padding: 0 2rem;
+    }
+    .star_kit_li_p{
+        font-size: 16px;
     }
 }
