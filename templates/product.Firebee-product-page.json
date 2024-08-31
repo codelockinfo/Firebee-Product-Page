@@ -187,15 +187,15 @@
         "text_rxTffc": {
           "type": "text",
           "settings": {
-            "question": "",
-            "answer": ""
+            "question": "Will Firebee Fit on My Head?",
+            "answer": "<p>Firebee has a fully adjustable headband you can adjust to fit comfortably and snug on your head.<\/p>"
           }
         },
         "text_CiTedn": {
           "type": "text",
           "settings": {
-            "question": "",
-            "answer": ""
+            "question": "What If I want the signal to stop?",
+            "answer": "<p>Firebee is designed to be used on command. If you wish to turn off a signal, the effects wear off within minutes.<\/p>"
           }
         },
         "text_7RAQax": {
