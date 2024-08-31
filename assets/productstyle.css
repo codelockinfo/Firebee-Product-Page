@@ -12,5 +12,8 @@
     gap:8px;
 }
 .product__column-sticky{
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
+}
+.trustbadge{
+    margin-top: 25px;
 }
