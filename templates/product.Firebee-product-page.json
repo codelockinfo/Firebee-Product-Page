@@ -135,7 +135,7 @@
           "type": "text",
           "settings": {
             "arrowimg": "shopify:\/\/shop_images\/Subtract_1.svg",
-            "linetext": "<p>Feeling unproductive? Turn on the focus signal <\/p>"
+            "linetext": "<p>Feeling unproductive? Turn on the <span class=\"focus_color\">focus <\/span>signal<\/p>"
           }
         },
         "text_TEh4CT": {
