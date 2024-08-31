@@ -87,8 +87,11 @@
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12,
+        "image_1": "shopify:\/\/shop_images\/Union.svg",
         "heading_1": "Heading",
+        "image_2": "shopify:\/\/shop_images\/Vector_1.svg",
         "heading_2": "Heading",
+        "image_3": "shopify:\/\/shop_images\/Union_1.svg",
         "heading_3": "Heading",
         "heading_4": ""
       }
