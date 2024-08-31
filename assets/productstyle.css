@@ -17,3 +17,14 @@
 .trustbadge{
     margin-top: 25px;
 }
+.hidedesktop{
+  display: none;       
+}
+@media screen and (max-width: 749px) {
+    .hidemobile{
+        display:none;
+    }
+    .hidedesktop{
+        display: block;       
+    }
+}
