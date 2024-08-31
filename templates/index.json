@@ -78,6 +78,50 @@
     },
     "firebee_imag_text_djaHb4": {
       "type": "firebee-imag-text",
+      "blocks": {
+        "text_GcEk9n": {
+          "type": "text",
+          "settings": {
+            "arrowimg": "shopify:\/\/shop_images\/Subtract.svg",
+            "linetext": "<p>Can’t sleep? Turn on the <span class=\"deep_color\">deep sleep<\/span> signal <\/p>"
+          }
+        },
+        "text_7QXYAp": {
+          "type": "text",
+          "settings": {
+            "arrowimg": "shopify:\/\/shop_images\/Subtract_1.svg",
+            "linetext": ""
+          }
+        },
+        "text_GbhnJA": {
+          "type": "text",
+          "settings": {
+            "arrowimg": "shopify:\/\/shop_images\/Subtract_1.svg",
+            "linetext": ""
+          }
+        },
+        "text_aWEE3U": {
+          "type": "text",
+          "settings": {
+            "arrowimg": "shopify:\/\/shop_images\/Subtract_1.svg",
+            "linetext": ""
+          }
+        },
+        "text_zwkCA3": {
+          "type": "text",
+          "settings": {
+            "arrowimg": "shopify:\/\/shop_images\/Subtract_1.svg",
+            "linetext": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_GcEk9n",
+        "text_7QXYAp",
+        "text_GbhnJA",
+        "text_aWEE3U",
+        "text_zwkCA3"
+      ],
       "settings": {
         "headingtext": "What will Firebee do for me?",
         "subheadingtext": "Firebee will help you gently nudge yourself into a different mental state",
