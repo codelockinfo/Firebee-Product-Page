@@ -188,7 +188,9 @@
       ],
       "settings": {
         "heading": "Firebee Signals",
-        "subheading": "A signal for every situation"
+        "subheading": "A signal for every situation",
+        "left_image": "shopify:\/\/shop_images\/Vector_3_Stroke_1.png",
+        "extra_image": "shopify:\/\/shop_images\/Vector_3_Stroke_1.png"
       }
     },
     "firebee_imag_text_6exede": {
