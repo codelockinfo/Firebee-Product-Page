@@ -1,0 +1,200 @@
+
+<div class="Firebee_section">
+  <div class="width_container">
+     <div class="main_heading">{{ section.settings.headingtext }}</div>
+     <div class="sub_heading">{{ section.settings.subheadingtext }}</div>
+     <div class="Firebee_box">
+        {% if section.settings.mainimg != blank %}
+       <div class="Firebee_imgbox">
+         <img src="{{ section.settings.mainimg | img_url:'master' }}_"  class="fire_img" alt="">
+       </div>
+       {% endif %}
+       <div class="Firebee_contentbox">
+          <ul class="Firebee_content">
+             {%- for block in section.blocks -%}
+               {% if block.settings.arrowimg != blank %}
+            <li class="Firebee_content_line "><div class="arrow_img_box"><img src="{{block.settings.arrowimg | img_url:'small'}}" class="arrow_img" alt=""></div>{{block.settings.linetext}}</li>
+               {% endif %}
+            {% endfor %}
+          </ul>
+       </div>
+     </div>
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Fire img with text ",
+  "settings": [
+     {
+          "type": "text",
+          "id": "headingtext",
+          "label": "Heading text"
+        },
+     {
+          "type": "text",
+          "id": "subheadingtext",
+          "label": "Subheading text"
+     },
+     {
+          "type": "image_picker",
+          "id": "mainimg",
+          "label": "Main img"
+     }
+  ],
+   "blocks": [
+    {
+      "name": "block",
+      "type": "text",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "arrowimg",
+          "label": "Arrow img"
+        },
+        {
+          "type": "html",
+          "id": "linetext",
+          "label": "Content text"
+        },
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Fire img with text ",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}
+<style>
+    .Firebee_section{
+      padding:50px 0;
+      background-color:#FBFCFB;
+    }
+    .width_container{
+      max-width:1440px;
+      padding:15px;
+      margin:0 auto;
+    }
+    .main_heading{
+      font-family: Poppins;
+      font-size: 72px;
+      font-weight: 300;
+      line-height: 82px;
+      text-align: center;
+      color:#3F3631;
+    }
+    .sub_heading{
+      font-family: Poppins;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 36px;
+      text-align: center;
+      color:#3F3631;
+    }
+    .Firebee_box{
+      display:flex;
+      flex-wrap:wrap;
+      margin-top:30px;
+      align-items:center;
+    }
+    .fire_img{
+      width:100%
+    }
+    .Firebee_imgbox{
+      width:50%; 
+    }
+    .Firebee_contentbox{
+      width:50%;
+    }
+    .Firebee_content{
+      list-style:none;
+    }
+    .Firebee_content_line{
+      font-family: Poppins;
+      font-size: 30px;
+      font-weight: 300;
+      line-height: 45px;
+      text-align: left;
+      margin-bottom:10px;
+      display:flex;
+      align-items:self-start;
+    }
+  .Firebee_content_line p{
+    margin:0;
+  }
+    .arrow_img{
+      width:60%;
+    }
+    
+    .deep_color{
+      background: linear-gradient(90deg, #2E034B 0%, #002182 50%, #2E034B 100%);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: 700;
+    }
+    .alert_color{
+      background: linear-gradient(90deg, #FF225E 0%, #9D2AC6 100%);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: 700;
+    }
+    .calm_color{
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: 700;
+      background: linear-gradient(90deg, #8BF2B5 0%, #35C8EB 100%);
+    }
+    .focus_color{
+      background: linear-gradient(90deg, #E280DA 0%, #6694EF 100%);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: 700;
+    }
+    .happy_color{
+      background: linear-gradient(90deg, #A34D9F 0%, #275FD0 100%);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: 700;
+    }
+  @media (max-width:1024px){
+     .main_heading{
+        font-size: 50px;
+      }
+      .sub_heading{
+        font-size: 26px;
+      }
+      .Firebee_content_line{
+        font-size: 24px;
+      }
+  }
+  @media (max-width:859px){
+     .Firebee_imgbox{
+        width:100%; 
+      }
+      .Firebee_contentbox{
+        width:100%;
+      }
+  }
+
+  @media (max-width:576px){
+    .main_heading{
+        font-size: 36px;
+        line-height: 46px;
+        padding:0 20px;
+      }
+      .sub_heading{
+        font-size: 18px;
+        line-height: 27px;
+        padding:0 10px;
+      }
+      .Firebee_content_line{
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom:10px;
+      }
+  }
+</style>

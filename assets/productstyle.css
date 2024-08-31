@@ -1,0 +1,10 @@
+.firebee-product-page .product-form__input--pill input[type=radio]+label{
+    width: 100%;
+    text-align: left;
+}
+.flex{
+    display: flex;
+}
+.gap-8{
+    gap:8px;
+}
