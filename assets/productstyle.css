@@ -1,6 +1,3 @@
-.header__icons {
-    justify-self: center;
-}
 
 header-drawer {
     justify-self: end !important;
@@ -217,6 +214,9 @@ header-drawer {
     .trustbadge_box .details_box {
         display: block;
         text-align: center;
+    }
+    .header__icons {
+        justify-self: center;
     }
 }
 
