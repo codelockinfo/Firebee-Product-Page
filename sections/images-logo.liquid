@@ -1,0 +1,253 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<section class="firebee_container">
+  <div class="product_contains">
+    <div class="p_heading">
+      <p>{{ section.settings.product_heading }}</p>
+    </div>
+    <div class="product_image">
+       <img src="{{ section.settings.p_images | img_url: 'master' }}" alt="{{ product.title }}" class="firebee_product">
+    </div>
+    <div class="icons_container">
+      <div class="icon_heading">
+        <p>{{ section.settings.icons_heading }}</p>
+      </div>
+      <div class="icons_images">
+        {% for block in section.blocks %}
+          <div class="icons_contain">
+            {% if block.settings.icons_img != blank %}
+              <img src="{{ block.settings.icons_img | img_url: 'mediaum' }}" class="class="icons_group"">
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+      <div class="text_contain">
+          <div class="text_icon_contain">
+            <p><i class="fa fa-check correct_icons"></i>{{ section.settings.icons_text1 }}</p>
+          </div>
+          <div class="text_icon_contain">
+            <p><i class="fa fa-check correct_icons"></i>{{ section.settings.icons_text2 }}</p>
+          </div>
+          <div class="text_icon_contain">
+            <p><i class="fa fa-check correct_icons"></i>{{ section.settings.icons_text3 }}</p>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Images and logos",
+    "settings": [
+      {
+        "type": "text",
+        "id": "product_heading",
+        "label": "Product Title"
+      },
+      {
+        "type": "image_picker",
+        "id": "p_images",
+        "label": "Product Image"
+      },
+      {
+        "type": "text",
+        "id": "icons_text1",
+        "label": "Icons Text"
+      },
+      {
+        "type": "text",
+        "id": "icons_text2",
+        "label": "Icons Text"
+      },
+      {
+        "type": "text",
+        "id": "icons_text3",
+        "label": "Icons Text"
+      },
+    ],
+    "blocks": [
+      {
+        "type": "collection",
+        "name": "Product Section",
+        "settings": [
+          
+          {
+            "type": "image_picker",
+            "id": "icons_img",
+            "label": "Icons"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Images and logos",
+      }
+    ]
+  }
+{% endschema %}
+
+<style>
+  *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+          
+  .firebee_container{
+    margin: 20px 0px;  
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+  }
+            
+  .p_heading{
+    display: flex;
+    font-size: 48px;
+    font-weight: normal;
+    justify-content: center;
+  }
+          
+  .product_image{
+    display: flex;
+    justify-content: center;
+  }
+          
+  .firebee_product{
+    width: 824px;
+  }
+
+  .icons_contain{
+    margin:0px 20px;
+  }
+          
+  .icons_container{
+    display: flex;
+    flex-direction: column;
+  }
+          
+  .icon_heading{
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-top: 20px;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+          
+  .icons_images{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+  }
+          
+  .icons_group{
+    height: 60px;
+    width: 110.98px;
+    margin: 0px 20px;
+  }
+          
+  .text_contain{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 35px 0px;
+  }
+          
+  .text_icon_contain{
+    font-size: 30px;
+    font-weight: 300;
+    text-align: left;
+    margin: 10px 30px;
+  }
+          
+  .correct_icons{
+    color: white;
+    padding: 6px;
+    font-size: 24px;
+    margin-right: 30px;
+    border-radius: 20px;
+    vertical-align: middle;
+    background: linear-gradient(317.65deg, #67CFE9 -32.17%, #5EEA9F 107.95%);
+  }
+          
+  @media (max-width:1024px){
+             
+    .text_icon_contain{
+      font-size: 24px;
+    }
+          
+    .correct_icons{
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width:905px){
+    .text_contain{
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+    }
+
+    .firebee_product{
+      max-width: 100%;
+    }
+  }
+          
+  @media (max-width: 768px) {
+          
+    .icon_heading p {
+      font-size: 20px;
+    }
+ 
+    .icons_group {
+      height: 60px;
+      width: 110.98px;
+      margin: 0px 20px;
+    }
+ 
+    .icons_images {
+      gap: 10px;
+      width: 100%;
+    }
+  }
+          
+  @media (max-width: 480px) {
+   .p_heading{
+      font-size: 36px;
+    }
+    
+    .icon_heading p {
+      font-size: 18px;
+    }
+    
+    .icons_images {
+      gap: 5px;
+    }
+  }
+          
+  @media (max-width: 425px){
+    .icons_images {
+      width: 100%;
+    }
+    .icons_group {
+      height: 50px;
+      width: 70px;
+      margin: 0px 15px;
+    }
+  }
+
+  @media (max-width: 320px){
+    .icons_images {
+      width: 100%;
+    }
+    .icons_group {
+      height: 50px;
+      margin: 0px 10px;
+    }
+  }
+</style>
