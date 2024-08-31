@@ -131,6 +131,83 @@
         "money_back_text": "At Firebee we believe in building quality products that actually work. Firebee and its partners have invested over $85 million in research and development to create the highest quality wearable for customers to enjoy. If for any reason if you are not satisfied with your Firebee headband we will happily refund your purchase."
       }
     },
+    "firebase_signal_UKJPUr": {
+      "type": "firebase-signal",
+      "blocks": {
+        "image_text_H8GKB3": {
+          "type": "image_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_15_5e92cc97-98db-46d0-acc9-d760059a9067.png",
+            "text": "Discover your best sleep with responsive sleep journeys, overnight sleep tracking, and personalized insights."
+          }
+        },
+        "image_text_teBkM9": {
+          "type": "image_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_15_1.png",
+            "text": "Discover your best sleep with responsive sleep journeys, overnight sleep tracking, and personalized insights."
+          }
+        },
+        "image_text_9Br6Lf": {
+          "type": "image_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_15_2.png",
+            "text": "Discover your best sleep with responsive sleep journeys, overnight sleep tracking, and personalized insights."
+          }
+        },
+        "image_text_4ebE9B": {
+          "type": "image_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_15_3.png",
+            "text": "Discover your best sleep with responsive sleep journeys, overnight sleep tracking, and personalized insights."
+          }
+        },
+        "image_text_EWCmKy": {
+          "type": "image_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_15_4.png",
+            "text": "Discover your best sleep with responsive sleep journeys, overnight sleep tracking, and personalized insights."
+          }
+        },
+        "image_text_pKqKRQ": {
+          "type": "image_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_15_5.png",
+            "text": "Discover your best sleep with responsive sleep journeys, overnight sleep tracking, and personalized insights."
+          }
+        },
+        "image_text_qNKVXe": {
+          "type": "image_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_15_6.png",
+            "text": "Discover your best sleep with responsive sleep journeys, overnight sleep tracking, and personalized insights."
+          }
+        },
+        "image_text_zCK9Qq": {
+          "type": "image_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vector_2.png",
+            "text": "Discover your best sleep with responsive sleep journeys, overnight sleep tracking, and personalized insights."
+          }
+        }
+      },
+      "block_order": [
+        "image_text_H8GKB3",
+        "image_text_teBkM9",
+        "image_text_9Br6Lf",
+        "image_text_4ebE9B",
+        "image_text_EWCmKy",
+        "image_text_pKqKRQ",
+        "image_text_qNKVXe",
+        "image_text_zCK9Qq"
+      ],
+      "settings": {
+        "heading": "Firebee Signals",
+        "subheading": "A signal for every situation",
+        "left_image": "shopify:\/\/shop_images\/Vector_3_Stroke_1.png",
+        "extra_image": "shopify:\/\/shop_images\/Vector_3_Stroke_1.png"
+      }
+    },
     "firebee_imag_text_6exede": {
       "type": "firebee-imag-text",
       "blocks": {
@@ -296,6 +373,7 @@
     "main",
     "related-products",
     "custom_img_text_kzTLYx",
+    "firebase_signal_UKJPUr",
     "firebee_imag_text_6exede",
     "images_logo_bA4EXV",
     "faq_section_bF6Ka4"
