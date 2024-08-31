@@ -329,31 +329,38 @@
       </button>
     </slider-component>
   {%- endif -%}
-  <div class="trustbadge hidemobile">
-      <div>
-          {% if section.settings.image_1 != blank %}<div> <img src="{{ section.settings.image_1 |  img_url: 'master'  }}" /></div>{% endif %}
-          <div>
-              {{ section.settings.heading_1 }}
-          </div>
+  <div class="trustbadge hidemobile trustbadge_box">
+    <div class="details_box">
+      {% if section.settings.image_1 != blank %}
+        <div class="details_img"><img src="{{ section.settings.image_1 |  img_url: 'master'  }}"></div>
+      {% endif %}
+      <div class="details_content" >
+        {{ section.settings.heading_1 }}
       </div>
-      <div>
-          {% if section.settings.image_2 != blank %}<div> <img src="{{ section.settings.image_2 |  img_url: 'master'  }}" /></div>{% endif %}
-          <div>
-              {{ section.settings.heading_2 }}
-          </div>
+    </div>
+    <div class="details_box">
+      {% if section.settings.image_2 != blank %}
+        <div class="details_img"><img src="{{ section.settings.image_2 |  img_url: 'master'  }}"></div>
+      {% endif %}
+      <div class="details_content">
+        {{ section.settings.heading_2 }}
       </div>
-      <div>
-          {% if section.settings.image_3 != blank %}<div><img src="{{ section.settings.image_3 |  img_url: 'master'  }}" /></div>{% endif %}
-          <div>
-              {{ section.settings.heading_3 }}
-          </div>
+    </div>
+    <div class="details_box">
+      {% if section.settings.image_3 != blank %}
+        <div class="details_img"><img src="{{ section.settings.image_3 |  img_url: 'master'  }}"></div>
+      {% endif %}
+      <div class="details_content">
+        {{ section.settings.heading_3 }}
       </div>
-      <div>
-          {% if section.settings.image_4 != blank %}<div><img src="{{ section.settings.image_4 |  img_url: 'master'  }}" /></div> {% endif %}
-          <div>
-              {{ section.settings.heading_4 }}
-          </div>
+    </div>
+    <div class="details_box">
+      {% if section.settings.image_4 != blank %}
+        <div class="details_img"><img src="{{ section.settings.image_4 |  img_url: 'master'  }}"></div>
+      {% endif %}
+      <div class="details_content">
+        {{ section.settings.heading_4 }}
       </div>
-     
+    </div>
   </div>
 </media-gallery>
