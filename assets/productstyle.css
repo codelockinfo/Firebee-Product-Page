@@ -24,10 +24,15 @@
 .hidedesktop {
     display: none;
 }
-
 .trustbadge_box {
     display: flex;
     flex-wrap: wrap;
+}   
+.hidedesktop{
+    display: none;       
+}
+.firebee-product-page .list-payment{
+    justify-content: flex-start;
 }
 
 .trustbadge_box .details_box {

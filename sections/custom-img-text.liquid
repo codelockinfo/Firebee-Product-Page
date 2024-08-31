@@ -1,0 +1,134 @@
+<section class="money-back-section">
+  <div class="container-width">
+    <div class="money-back-wrapper">
+      {% if section.settings.money_back_image %}
+        <div class="money-back-image">
+          <img src="{{ section.settings.money_back_image | img_url: 'master' }}" alt="">
+        </div>
+      {% endif %}
+      <div class="money-back-text">
+        <h2>{{ section.settings.money_back_heading }}</h2>
+        <p>{{ section.settings.money_back_text }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .money-back-section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+  }
+
+  .container-width {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .money-back-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .money-back-image img {
+    max-width: 292px;
+  }
+
+  .money-back-text {
+    margin-bottom: 45px;
+  }
+
+  .money-back-text h2 {
+    font-size: 48px;
+    color: #3F3631;
+    margin-bottom: 15px;
+    max-width: 732px;
+    line-height: 82px;
+  }
+
+  .money-back-text p {
+    font-size: 24px;
+    line-height: 36px;
+    color: #3F3631;
+    margin: 0;
+    text-align: justify;
+    max-width: 887px;
+  }
+
+  @media (max-width: 991px) {
+    .money-back-wrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .money-back-image img {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    .money-back-text h2 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .money-back-text p {
+      font-size: 22px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .money-back-wrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .money-back-image img {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    .money-back-text h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      line-height: 45px;
+    }
+
+    .money-back-text p {
+      font-size: 18px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Image by Text",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "money_back_image",
+      "label": "Money Back Guarantee Image"
+    },
+    {
+      "type": "text",
+      "id": "money_back_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "money_back_text",
+      "label": "Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image by Text",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}
