@@ -109,6 +109,50 @@
     },
     "firebee_imag_text_6exede": {
       "type": "firebee-imag-text",
+      "blocks": {
+        "text_TrB3BN": {
+          "type": "text",
+          "settings": {
+            "arrowimg": "shopify:\/\/shop_images\/Subtract.svg",
+            "linetext": ""
+          }
+        },
+        "text_KERhM9": {
+          "type": "text",
+          "settings": {
+            "arrowimg": "shopify:\/\/shop_images\/Subtract_1.svg",
+            "linetext": ""
+          }
+        },
+        "text_b8DiC3": {
+          "type": "text",
+          "settings": {
+            "arrowimg": "shopify:\/\/shop_images\/Subtract_1.svg",
+            "linetext": ""
+          }
+        },
+        "text_ibwcFz": {
+          "type": "text",
+          "settings": {
+            "arrowimg": "shopify:\/\/shop_images\/Subtract_1.svg",
+            "linetext": ""
+          }
+        },
+        "text_TEh4CT": {
+          "type": "text",
+          "settings": {
+            "arrowimg": "shopify:\/\/shop_images\/Subtract_1.svg",
+            "linetext": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_TrB3BN",
+        "text_KERhM9",
+        "text_b8DiC3",
+        "text_ibwcFz",
+        "text_TEh4CT"
+      ],
       "settings": {
         "headingtext": "What will Firebee do for me?",
         "subheadingtext": "Firebee will help you gently nudge yourself into a different mental state",
