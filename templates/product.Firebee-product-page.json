@@ -12,20 +12,21 @@
     "main": {
       "type": "main-firebee-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
           }
         },
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "Order today and receive your Firebee by June 15th, 2021",
+            "text_style": "uppercase"
+          }
+        },
         "price": {
           "type": "price",
+          "disabled": true,
           "settings": {
           }
         },
@@ -61,8 +62,8 @@
         }
       },
       "block_order": [
-        "vendor",
         "title",
+        "vendor",
         "price",
         "variant_picker",
         "quantity_selector",
