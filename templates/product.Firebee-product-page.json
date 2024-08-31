@@ -106,10 +106,19 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "firebee_imag_text_6exede": {
+      "type": "firebee-imag-text",
+      "settings": {
+        "headingtext": "What will Firebee do for me?",
+        "subheadingtext": "Firebee will help you gently nudge yourself into a different mental state",
+        "mainimg": "shopify:\/\/shop_images\/ec2d03fca4e4e64d116b50573614e90d.png"
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "firebee_imag_text_6exede"
   ]
 }
