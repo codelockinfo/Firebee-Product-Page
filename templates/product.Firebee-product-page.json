@@ -182,6 +182,13 @@
             "image": "shopify:\/\/shop_images\/image_15_6.png",
             "text": "Discover your best sleep with responsive sleep journeys, overnight sleep tracking, and personalized insights."
           }
+        },
+        "image_text_zCK9Qq": {
+          "type": "image_text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vector_2.png",
+            "text": "Discover your best sleep with responsive sleep journeys, overnight sleep tracking, and personalized insights."
+          }
         }
       },
       "block_order": [
@@ -191,7 +198,8 @@
         "image_text_4ebE9B",
         "image_text_EWCmKy",
         "image_text_pKqKRQ",
-        "image_text_qNKVXe"
+        "image_text_qNKVXe",
+        "image_text_zCK9Qq"
       ],
       "settings": {
         "heading": "Firebee Signals",
