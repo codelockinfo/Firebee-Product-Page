@@ -183,6 +183,53 @@
         "mainimg": "shopify:\/\/shop_images\/ec2d03fca4e4e64d116b50573614e90d.png"
       }
     },
+    "images_logo_bA4EXV": {
+      "type": "images-logo",
+      "blocks": {
+        "collection_KCgEk6": {
+          "type": "collection",
+          "settings": {
+            "icons_img": "shopify:\/\/shop_images\/image_13.png"
+          }
+        },
+        "collection_G4ApMg": {
+          "type": "collection",
+          "settings": {
+            "icons_img": "shopify:\/\/shop_images\/image_14.png"
+          }
+        },
+        "collection_wGHkUc": {
+          "type": "collection",
+          "settings": {
+            "icons_img": "shopify:\/\/shop_images\/image_18.png"
+          }
+        },
+        "collection_KqW37p": {
+          "type": "collection",
+          "settings": {
+          }
+        },
+        "collection_3y7ViX": {
+          "type": "collection",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "collection_KCgEk6",
+        "collection_G4ApMg",
+        "collection_wGHkUc",
+        "collection_KqW37p",
+        "collection_3y7ViX"
+      ],
+      "settings": {
+        "product_heading": "",
+        "p_images": "shopify:\/\/shop_images\/product_image.png",
+        "icons_text1": "",
+        "icons_text2": "",
+        "icons_text3": ""
+      }
+    },
     "faq_section_bF6Ka4": {
       "type": "faq-section",
       "blocks": {
@@ -240,6 +287,7 @@
     "related-products",
     "custom_img_text_kzTLYx",
     "firebee_imag_text_6exede",
+    "images_logo_bA4EXV",
     "faq_section_bF6Ka4"
   ]
 }
