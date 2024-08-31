@@ -1,7 +1,7 @@
-
-.header__icons{
+.header__icons {
     justify-self: center;
 }
+
 header-drawer {
     justify-self: end !important;
     margin-left: -1.2rem;
@@ -10,23 +10,29 @@ header-drawer {
     justify-self: end;
     padding-right: .8rem;
 }
-.header__icon--account{
+
+.header__icon--account {
     background: #4B93D0;
-    border-radius: 50%;    
+    border-radius: 50%;
 }
-.header-wrapper .header-buynow{
+
+.header-wrapper .header-buynow {
     background-color: #07C961;
 }
-.header-wrapper .header-buynow:after{
+
+.header-wrapper .header-buynow:after {
     box-shadow: unset;
 }
-.announce-bgimage{
+
+.announce-bgimage {
     background-size: cover;
 }
-.announcement-bar__message{
+
+.announcement-bar__message {
     padding: 2rem 0;
 }
-.announcement-bar__message span{
+
+.announcement-bar__message span {
     font-size: 24px;
     font-weight: 800;
     line-height: 29.05px;
@@ -34,13 +40,16 @@ header-drawer {
     text-align: center;
     color: #FFFFFF;
 }
-.mr-20{
+
+.mr-20 {
     margin-right: 20px;
 }
-.header__icon--account .svg-wrapper{
+
+.header__icon--account .svg-wrapper {
     width: 25px;
     height: 25px;
 }
+
 .firebee-product-page .product-form__input--pill input[type=radio]+label {
     width: 100%;
     text-align: left;
@@ -67,14 +76,17 @@ header-drawer {
 .hidedesktop {
     display: none;
 }
+
 .trustbadge_box {
     display: flex;
     flex-wrap: wrap;
-}   
-.hidedesktop{
-    display: none;       
 }
-.firebee-product-page .list-payment{
+
+.hidedesktop {
+    display: none;
+}
+
+.firebee-product-page .list-payment {
     justify-content: center;
 }
 
@@ -105,54 +117,60 @@ header-drawer {
     text-transform: none !important;
 }
 
-.star_kit_box{
+.star_kit_box {
     background-color: #fff !important;
     border-radius: 10px !important;
-    border: 1px solid #C4C4C4;
+    border: 1px solid #C4C4C4 !important;
 }
+
 .product-form__input--pill input[type=radio]:checked+label {
--webkit-border-radius: 10px !important;
-border-radius: 10px !important; 
-color: #3F3631 !important;
-  border: 2px solid;
-border-width: 2px;
-border-image-slice: 1;
-border-image-source: linear-gradient(180deg, #2D5ECE 0%, #9F4EA1 100%);
+    border-radius: 10px !important;
+    -webkit-border-radius: 10px !important;
+    color: #3F3631 !important;
+    border: 2px solid !important;
+    border-width: 2px !important;
+    border-image-slice: 1 !important;
+    border-image-source: linear-gradient(180deg, #2D5ECE 0%, #9F4EA1 100%) !important;
 }
-.star_kit_price_box{
+
+.star_kit_price_box {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.star_kit_price_box .star_kit_h{
+
+.star_kit_price_box .star_kit_h {
     font-family: Poppins;
-font-size: 24px;
-font-weight: 700;
-line-height: 36px;
-text-align: left;
-color: #3F3631;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+    color: #3F3631;
 }
-.star_kit_price_box .star_kit_price{
+
+.star_kit_price_box .star_kit_price {
     font-family: Poppins;
-font-size: 24px;
-font-weight: 300;
-line-height: 36px;
-text-align: left;
-color: #3F3631;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    text-align: left;
+    color: #3F3631;
 }
-.star_kit_price_box .star_kit_comprice{
+
+.star_kit_price_box .star_kit_comprice {
     font-family: Poppins;
-font-size: 24px;
-font-weight: 300;
-line-height: 36px;
-text-align: left;
-color: #3F3631;
-text-decoration: line-through;
-text-decoration-color: red;
-margin-right: 10px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    text-align: left;
+    color: #3F3631;
+    text-decoration: line-through;
+    text-decoration-color: red;
+    margin-right: 10px;
 
 }
-.most_kit{
+
+.most_kit {
     margin-bottom: 10px;
     padding: 10px 20px;
     background: linear-gradient(90deg, #A34D9F 0%, #275FD0 100%);
@@ -160,25 +178,30 @@ margin-right: 10px;
     color: #fff;
     border-radius: 100px;
 }
-.star_kit_li{
+
+.star_kit_li {
     margin-bottom: 5px;
     align-items: self-start;
 }
-.star_kit_li_p{
+
+.star_kit_li_p {
     font-family: Poppins;
     font-size: 18px;
     font-weight: 300;
     line-height: 23px;
-    text-align: left;    
+    text-align: left;
 }
-.most_kit_content{
+
+.most_kit_content {
     margin: 15px 0;
 }
-.star_kit_box .svg-wrapper>svg{
+
+.star_kit_box .svg-wrapper>svg {
     height: auto !important;
     width: auto !important;
 }
-.main_p{
+
+.main_p {
     font-family: Poppins;
     font-size: 16px;
     font-weight: 300;
@@ -186,6 +209,10 @@ margin-right: 10px;
     text-align: left;
     margin-top: 10px;
 }
+/* .product-form__input--pill input[type=radio]+label:hover{
+    border: 1px solid #C4C4C4 !important;
+} */
+
 @media screen and (max-width: 991px) {
     .trustbadge_box .details_box {
         display: block;
@@ -194,10 +221,11 @@ margin-right: 10px;
 }
 
 @media screen and (max-width: 749px) {
-    .announcement-bar__message span{
+    .announcement-bar__message span {
         font-size: 18px;
         line-height: 21.78px;
     }
+
     .hidemobile {
         display: none;
     }
@@ -211,11 +239,13 @@ margin-right: 10px;
         flex-wrap: wrap;
     }
 }
+
 @media screen and (max-width: 576px) {
-    .header-buynow{
+    .header-buynow {
         padding: 0 2rem;
     }
-    .star_kit_li_p{
+
+    .star_kit_li_p {
         font-size: 16px;
     }
 }
