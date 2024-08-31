@@ -381,15 +381,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
   if (buyNowButton) {
     buyNowButton.addEventListener('click', function(e) {
-      console.log("GGGGGGGGGG");
       e.preventDefault();
 
-      // Get the selected variant ID
       var variantId;
       var selectElement = document.querySelector('select[name=id]');
       var radioElement = document.querySelector('input[name="id"]');
-console.log(selectElement);
-console.log(radioElement);
       if (selectElement) {
         variantId = selectElement.value;
       } else if (radioElement) {

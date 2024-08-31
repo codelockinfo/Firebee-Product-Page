@@ -1,4 +1,15 @@
 
+.header__icons{
+    justify-self: center;
+}
+header-drawer {
+    justify-self: end !important;
+    margin-left: -1.2rem;
+    display: flex;
+    grid-area: icons;
+    justify-self: end;
+    padding-right: .8rem;
+}
 .header__icon--account{
     background: #4B93D0;
     border-radius: 50%;    
@@ -8,6 +19,20 @@
 }
 .header-wrapper .header-buynow:after{
     box-shadow: unset;
+}
+.announce-bgimage{
+    background-size: cover;
+}
+.announcement-bar__message{
+    padding: 2rem 0;
+}
+.announcement-bar__message span{
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 29.05px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #FFFFFF;
 }
 .mr-20{
     margin-right: 20px;
@@ -89,6 +114,10 @@
 }
 
 @media screen and (max-width: 749px) {
+    .announcement-bar__message span{
+        font-size: 18px;
+        line-height: 21.78px;
+    }
     .hidemobile {
         display: none;
     }
@@ -100,5 +129,10 @@
     .trustbadge_box {
         display: flex;
         flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 570px) {
+    .header-buynow{
+        padding: 0 2rem;
     }
 }
