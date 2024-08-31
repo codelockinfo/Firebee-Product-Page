@@ -90,7 +90,7 @@
           "type": "text",
           "settings": {
             "arrowimg": "shopify:\/\/shop_images\/Subtract_1.svg",
-            "linetext": ""
+            "linetext": "<p>Feeling tired? Turn on the <span class=\"alert_color\">alert <\/span> signal <\/p>"
           }
         },
         "text_GbhnJA": {
