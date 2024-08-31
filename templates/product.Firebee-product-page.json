@@ -128,7 +128,7 @@
           "type": "text",
           "settings": {
             "arrowimg": "shopify:\/\/shop_images\/Subtract_1.svg",
-            "linetext": "<p>Feeling anxious? Turn on the calm signal <\/p>"
+            "linetext": "<p>Feeling anxious? Turn on the <span class=\"calm_color\">calm <\/span>signal <\/p>"
           }
         },
         "text_ibwcFz": {
