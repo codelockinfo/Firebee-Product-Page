@@ -27,6 +27,7 @@
       ],
       "settings": {
         "color_scheme": "scheme-1",
+        "announce-bgimage": "shopify:\/\/shop_images\/image_16.png",
         "show_line_separator": true,
         "show_social": false,
         "auto_rotate": false,
