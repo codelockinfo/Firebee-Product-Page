@@ -76,7 +76,7 @@
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
-        "media_size": "large",
+        "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "gallery_layout": "thumbnail",
@@ -86,7 +86,11 @@
         "hide_variants": false,
         "enable_video_looping": false,
         "padding_top": 36,
-        "padding_bottom": 12
+        "padding_bottom": 12,
+        "heading_1": "Heading",
+        "heading_2": "Heading",
+        "heading_3": "Heading",
+        "heading_4": ""
       }
     },
     "related-products": {
