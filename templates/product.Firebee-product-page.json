@@ -174,7 +174,7 @@
           "type": "text",
           "settings": {
             "question": "Is Firebee Safe?",
-            "answer": "<p>Yes, Firebee is safe. Firebee meets the safety standards set by ICNIRP (International Commission on Non-Ionizing Radiation Protection). Firebee is 3000x less powerful than your average smartphone. Firebee uses an ultra-low signal that is completely safe for home use. The technology behind Firebee has been rigorously safety tested and has over 300,000 hours tested by users for efficacy and safety. <\/p>"
+            "answer": "<p>Yes, Firebee is safe. Firebee meets the safety standards set by ICNIRP (International Commission on Non-Ionizing Radiation Protection). Firebee is <strong>3000x less powerful <\/strong>than your average smartphone. Firebee uses an ultra-low signal that is completely safe for home use. The technology behind Firebee has been rigorously safety tested and has over 300,000 hours tested by users for efficacy and safety. <\/p>"
           }
         },
         "text_XfJFaC": {
