@@ -209,6 +209,21 @@ header-drawer {
 /* .product-form__input--pill input[type=radio]+label:hover{
     border: 1px solid #C4C4C4 !important;
 } */
+ /* footer */
+ .social-icon-label{
+    padding-left: 1.1rem;
+ }
+.footer .footer__content-top{
+     display: flex;
+}
+.footer .footer__blocks-wrapper{
+    width: 50%;
+}
+.footer .footer-block--newsletter {
+    display: inline-block;
+    margin-top: 0;
+}
+/* footer */
 
 @media screen and (max-width: 991px) {
     .trustbadge_box .details_box {
