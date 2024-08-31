@@ -18,7 +18,10 @@
     margin-top: 25px;
 }
 .hidedesktop{
-  display: none;       
+    display: none;       
+}
+.firebee-product-page .list-payment{
+    justify-content: flex-start;
 }
 @media screen and (max-width: 749px) {
     .hidemobile{

@@ -471,6 +471,15 @@
                   section_id: section.id,
                   show_pickup_availability: true
                 -%}
+              {%- when 'img' -%}
+                  <ul class="list list-payment" role="list">
+                    {%- assign arr = block.settings.svg | remove: ' ' | split:"," -%}
+                    {%- for type in arr -%}
+                      <li class="list-payment__item">
+                        {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+                      </li>
+                    {%- endfor -%}
+                  </ul>
               {%- when 'rating' -%}
                 {%- if product.metafields.reviews.rating.value != blank -%}
                   <div class="rating-wrapper">
@@ -941,6 +950,20 @@
         }
       ]
     },
+    {
+        "type": "img",
+        "name": "Trust Badge",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "textarea",
+            "id": "svg",
+            "label": "SVG list",
+            "default": "amazon_payments,american_express,apple_pay,bitcoin,dankort,diners_club,discover,dogecoin,dwolla,forbrugsforeningen,interac,google_pay,jcb,klarna,klarna-pay-later,litecoin,maestro,master,paypal,shopify_pay,sofort,visa",
+            "info": "amazon_payments,american_express,apple_pay,bitcoin,dankort,diners_club,discover,dogecoin,dwolla,forbrugsforeningen,interac,google_pay,jcb,klarna,klarna-pay-later,litecoin,maestro,master,paypal,shopify_pay,sofort,visa"
+          }
+        ]
+      },
     {
       "type": "description",
       "name": "t:sections.main-product.blocks.description.name",
