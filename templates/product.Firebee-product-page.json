@@ -65,7 +65,7 @@
         "img_pph4qH": {
           "type": "img",
           "settings": {
-            "svg": "visa,master,american_express,maestro,paypal,"
+            "svg": "visa,master,american_express,maestro,paypal,affirm"
           }
         }
       },
