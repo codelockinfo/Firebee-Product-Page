@@ -76,7 +76,7 @@
   <div class="page-width">
     <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
       <div class="grid__item product__media-wrapper">
-        {% render 'product-media-gallery', variant_images: variant_images %}
+        {% render 'firebee-product-media-gallery', variant_images: variant_images %}
       </div>
       <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         <section
@@ -464,7 +464,7 @@
               {%- when 'variant_picker' -%}
                 {% render 'firebee-product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
               {%- when 'buy_buttons' -%}
-                {%- render 'buy-buttons',
+                {%- render 'firebee-buy-buttons',
                   block: block,
                   product: product,
                   product_form_id: product_form_id,
@@ -2254,6 +2254,56 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "header",
+      "content": "Trust badges"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "t:sections.main-product.blocks.icon_with_text.settings.image_1.label"
+    },
+    {
+      "type": "textarea",
+      "id": "heading_1",
+      "default": "t:sections.main-product.blocks.icon_with_text.settings.heading_1.default",
+      "label": "t:sections.main-product.blocks.icon_with_text.settings.heading_1.label",
+      "info": "t:sections.main-product.blocks.icon_with_text.settings.heading.info"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "t:sections.main-product.blocks.icon_with_text.settings.image_2.label"
+    },
+    {
+      "type": "textarea",
+      "id": "heading_2",
+      "default": "t:sections.main-product.blocks.icon_with_text.settings.heading_2.default",
+      "label": "t:sections.main-product.blocks.icon_with_text.settings.heading_2.label",
+      "info": "t:sections.main-product.blocks.icon_with_text.settings.heading.info"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "t:sections.main-product.blocks.icon_with_text.settings.image_3.label"
+    },
+    {
+      "type": "textarea",
+      "id": "heading_3",
+      "default": "t:sections.main-product.blocks.icon_with_text.settings.heading_3.default",
+      "label": "t:sections.main-product.blocks.icon_with_text.settings.heading_3.label",
+      "info": "t:sections.main-product.blocks.icon_with_text.settings.heading.info"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_4",
+      "label": "Four image"
+    },
+    {
+      "type": "textarea",
+      "id": "heading_4",
+      "label": "Four heading",
     }
   ]
 }

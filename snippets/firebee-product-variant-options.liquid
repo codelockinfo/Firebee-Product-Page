@@ -92,13 +92,20 @@
       {{ input_dataset }}
     >
     <label for="{{ input_id }}">
+        {%- assign selected_variant = product.variants | where: 'option1', value | first -%}
+
         <div>
-            <div>{{ value -}}</div><div> {{ value.price }}</div> ????
+            <div>{{ value -}}</div>
+            <div><span>{{ selected_variant.compare_at_price | money }}</span>{{ selected_variant.price | money }}</div>
         </div>
-      {{ label_unavailable }}
+        
+        {{ label_unavailable }}
       <div>
         {% for variant in product.variants %}
-            {% if value ==   variant.title %} 
+            {% if value == variant.title %} 
+                {% if value == "Firebee Starter Kit" %}
+                    <div>MOST POPULAR KIT</div>
+                {% endif %}
                 {% assign rightcontent = variant.metafields.custom.rightcontent  | remove: '["' | remove: '"]' %}
                 {%  if rightcontent != blank %}
                       {% assign paragraphs = rightcontent | split:  '","' %}
@@ -108,7 +115,7 @@
                                 {{- 'icon-right.svg' | inline_asset_content  -}}
                             </span>
                             <div class=""> 
-                                    {{ paragraph }}
+                                {{ paragraph }}
                             </div>
                         </div>
                       {% endfor %}
